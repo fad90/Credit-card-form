@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Credit card</title>
+  </head>
+  <body>
+    <div class="checkout">
+      <div class="checkout__wrapper">
+        <div class="checkout__heading">Checkout</div>
+
+        <div class="checkout__item item">
+          <div class="item__title">Products</div>
+          <div class="item__product item__product_bottom">
+            <p class="item__text">
+              Apple®-iPad® with Retina® display Wi-Fi - 32GB - White
+            </p>
+            <p class="item__price">$499.00</p>
+          </div>
+          <div class="item__product">
+            <p class="item__text">16GB A Series Walkman Video MP3</p>
+            <p class="item__price">$130.00</p>
+          </div>
+        </div>
+
+        <div class="checkout__item item">
+          <div class="item__title">Shipping method</div>
+          <div class="item__product">
+            <p class="item__text_color">FedEx</p>
+            <p class="item__price">$13.99</p>
+          </div>
+        </div>
+
+        <div class="payment">
+          <div class="payment__title">Payment method</div>
+          <div class="payment__cards">
+            <div class="payment__method active">Credit card</div>
+            <div class="payment__method">Gift card</div>
+            <div class="payment__method">PayPal</div>
+          </div>
+
+          <div class="info active">
+            <div class="info__container">
+              <div class="info__main">
+                <form action="#">
+                  <div class="info__number">
+                    <p class="info__title">
+                      Card number<span class="info__necessary">*</span>
+                    </p>
+                    <input
+                      type="text"
+                      name="card-number"
+                      class="info__input info__card-number"
+                      placeholder="9999 9999 9999 9999"
+                      required
+                    />
+                  </div>
+                  <div class="info__date">
+                    <p class="info__title">
+                      Valid thru (mm/yy)<span class="info__necessary">*</span>
+                    </p>
+                    <div class="info__date-input">
+                      <input
+                        type="text"
+                        name="month"
+                        class="info__date-size info__date-month"
+                        placeholder="01"
+                        max="12"
+                        required
+                      />
+                      <p class="info__slash">/</p>
+                      <input
+                        type="text"
+                        name="year"
+                        class="info__date-size info__date-year"
+                        placeholder="2021"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="info__title">
+                      Cardholder's name<span class="info__necessary">*</span>
+                    </p>
+                    <input
+                      type="text"
+                      name="cardholder's-name"
+                      class="info__input"
+                      placeholder="Jack"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="info__cvv">
+                <form action="#">
+                  <p class="info__title">
+                    CVV/CVC<span class="info__necessary">*</span>
+                  </p>
+
+                  <div class="info__input-container">
+                    <input
+                      type="text"
+                      name="cvv"
+                      class="info__input-cvv"
+                      placeholder="999"
+                      required
+                    />
+
+                    <div class="info__mark">
+                      ?
+                      <p class="info__tooltip">
+                        Turn your card over and look at the signature box.Last
+                        3-digit code is your cvv number
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="info info__another">Gift card</div>
+          <div class="info info__another">PayPal</div>
+        </div>
+
+        <div class="term term-indent">
+          <div class="term__text">
+            <input type="checkbox" name="terms" class="term__checkbox" />I
+            accept the
+            <span class="term__text_highlighted">Terms and Conditions</span>
+          </div>
+        </div>
+
+        <div class="order">
+          <form action="#">
+            <button class="order__button">Place order ( $624.99 )</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <div class="popup__close">x</div>
+          <div class="popup__title">Terms and Conditions</div>
+          <div class="popup__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+            harum exercitationem, ipsum hic a rem dolorum? Praesentium voluptas
+            quasi minus perferendis modi culpa dolorem, maxime voluptates
+            repellendus doloribus libero incidunt! Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Nesciunt harum exercitationem, ipsum
+            hic a rem dolorum? Praesentium voluptas quasi minus perferendis modi
+            culpa dolorem, maxime voluptates repellendus doloribus libero
+            incidunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Nesciunt harum exercitationem, ipsum hic a rem dolorum? Praesentium
+            voluptas quasi minus perferendis modi culpa dolorem, maxime
+            voluptates repellendus doloribus libero incidunt!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

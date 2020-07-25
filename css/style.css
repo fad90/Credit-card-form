@@ -1,0 +1,254 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #2e3a47;
+}
+.html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.checkout__wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.checkout__heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.checkout__item {
+  margin-bottom: 18px;
+}
+.item__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.item__product {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+.item__product_bottom {
+  margin-bottom: 15px;
+}
+
+.item__text {
+  color: #3258e4;
+  text-decoration: underline;
+  font-weight: 400;
+  cursor: pointer;
+}
+.item__price {
+  font-weight: 600;
+}
+
+.checkout__row {
+  margin-bottom: 18px;
+}
+
+.item__text_color {
+  cursor: pointer;
+}
+
+.payment__title {
+  margin-bottom: 15px;
+}
+.checkout__item {
+  margin-bottom: 18px;
+}
+.payment__title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.payment__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.payment__method {
+  padding: 10px 70px;
+  color: #4f6ee1;
+  background-color: #ffffff;
+  border: 2px solid #d0d9e1;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.payment__method.active {
+  background-color: #4f6ee1;
+  color: #ffffff;
+  border: 2px solid #4f6ee1;
+}
+.info {
+  display: none;
+}
+.info__container {
+  display: flex;
+}
+.info__another {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 109px;
+  text-align: center;
+  background-color: #4f6ee1;
+  color: #000000;
+  border-radius: 5px;
+}
+.info__another:last-child {
+  background-color: #ff6600;
+}
+.info.active {
+  display: block;
+}
+
+.info__main {
+  border: 1px solid #d0d9e1;
+  width: 58%;
+  padding: 26px 26px;
+}
+.info__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info__arrows_remove::-webkit-inner-spin-button {
+  display: none;
+}
+.info__arrows_remove {
+  -moz-appearance: textfield;
+}
+.info__number {
+  margin-bottom: 10px;
+}
+.info__input {
+  width: 100%;
+  height: 28px;
+}
+.info__date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.info__date-input {
+  display: flex;
+}
+.info__date-size {
+  max-width: 50px;
+  height: 28px;
+}
+.info__slash {
+  margin: 7px 5px 0 5px;
+}
+.info__necessary {
+  color: #ff0000;
+  margin-left: 5px;
+}
+.info__cvv {
+  width: 15%;
+  margin: 27px;
+}
+.info__input-container {
+  position: relative;
+}
+.info__mark {
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  top: 7px;
+  right: 0;
+  padding: 3px 7px;
+  border-radius: 10px;
+  background-color: #dadada;
+  cursor: pointer;
+}
+.info__tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  font-size: 12px;
+  right: -10px;
+  top: 40px;
+  border: 1px solid #777d81;
+  color: #56585a;
+  border-radius: 5px;
+  width: 500%;
+}
+.info__mark:hover .info__tooltip {
+  display: block;
+}
+.info__input-cvv {
+  width: 100%;
+  height: 28px;
+}
+.term-indent {
+  margin: 30px 0;
+}
+.term__text {
+  background-color: #f8f8f8;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid #dad6d6;
+}
+.term__checkbox {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.term__text_highlighted {
+  color: #6c6e6e;
+  border-bottom: 1px dotted;
+  cursor: pointer;
+}
+.order__button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #ff6600;
+  border: none;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+.popup__content {
+  background-color: #ffffff;
+  max-width: 650px;
+  padding: 20px;
+  position: relative;
+}
+.popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.popup__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
