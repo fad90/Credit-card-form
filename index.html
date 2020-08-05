@@ -38,111 +38,107 @@
           </div>
         </div>
 
-        <div class="payment">
-          <div class="payment__title">Payment method</div>
-          <div class="payment__cards">
-            <div class="payment__method active">Credit card</div>
-            <div class="payment__method">Gift card</div>
-            <div class="payment__method">PayPal</div>
-          </div>
-
-          <div class="info active">
-            <div class="info__container">
-              <div class="info__main">
-                <form action="#">
-                  <div class="info__number">
-                    <p class="info__title">
-                      Card number<span class="info__necessary">*</span>
-                    </p>
-                    <input
-                      type="text"
-                      name="card-number"
-                      class="info__input info__card-number"
-                      placeholder="9999 9999 9999 9999"
-                      required
-                    />
-                  </div>
-                  <div class="info__date">
-                    <p class="info__title">
-                      Valid thru (mm/yy)<span class="info__necessary">*</span>
-                    </p>
-                    <div class="info__date-input">
-                      <input
-                        type="text"
-                        name="month"
-                        class="info__date-size info__date-month"
-                        placeholder="01"
-                        max="12"
-                        required
-                      />
-                      <p class="info__slash">/</p>
-                      <input
-                        type="text"
-                        name="year"
-                        class="info__date-size info__date-year"
-                        placeholder="2021"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <p class="info__title">
-                      Cardholder's name<span class="info__necessary">*</span>
-                    </p>
-                    <input
-                      type="text"
-                      name="cardholder's-name"
-                      class="info__input"
-                      placeholder="Jack"
-                      required
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="info__cvv">
-                <form action="#">
-                  <p class="info__title">
-                    CVV/CVC<span class="info__necessary">*</span>
-                  </p>
-
-                  <div class="info__input-container">
-                    <input
-                      type="text"
-                      name="cvv"
-                      class="info__input-cvv"
-                      placeholder="999"
-                      required
-                    />
-
-                    <div class="info__mark">
-                      ?
-                      <p class="info__tooltip">
-                        Turn your card over and look at the signature box.Last
-                        3-digit code is your cvv number
+        
+        <form class="form" action="#">
+          <div class="payment">
+            <div class="payment__title">Payment method</div>
+            <div class="payment__cards">
+              <div class="payment__method active">Credit card</div>
+              <div class="payment__method">Gift card</div>
+              <div class="payment__method">PayPal</div>
+            </div>
+  
+            <div class="info active">
+              <div class="info__container">
+                <div class="info__main">
+                      <div class="info__number">
+                        <p class="info__title">
+                          Card number<span class="info__necessary">*</span>
+                        </p>
+                        <input
+                          type="text"
+                          name="card-number"
+                          class="info__input info__card-number"
+                          placeholder="9999 9999 9999 9999"
+                          required 
+                        />
+                      </div>               
+                    <div class="info__date">
+                      <p class="info__title">
+                        Valid thru (mm/yy)<span class="info__necessary">*</span>
                       </p>
+                      <div class="info__date-input">
+                        <input
+                          type="text"
+                          name="month"
+                          class="info__date-size info__date-month"
+                          placeholder="01"
+                          required 
+                        />
+                        <p class="info__slash">/</p>
+                        <input
+                          type="text"
+                          name="year"
+                          class="info__date-size info__date-year"
+                          placeholder="2021"
+                          required 
+                        />
+                      </div>
                     </div>
-                  </div>
-                </form>
+                    <div>
+                      <p class="info__title">
+                        Cardholder's name<span class="info__necessary">*</span>
+                      </p>
+                      <input
+                        type="text"
+                        name="cardholder's-name"
+                        class="info__input info__input-name"
+                        placeholder="Jack"
+                        required 
+                      />
+                    </div>
+                </div>
+                <div class="info__cvv">
+                    <p class="info__title">
+                      CVV/CVC<span class="info__necessary">*</span>
+                    </p>
+  
+                    <div class="info__input-container">
+                      <input
+                        type="text"
+                        name="cvv"
+                        class="info__input-cvv"
+                        placeholder="999"
+                        required 
+                      />
+  
+                      <div class="info__mark">
+                        ?
+                        <p class="info__tooltip">
+                          Turn your card over and look at the signature box.Last
+                          3-digit code is your cvv number
+                        </p>
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
+            <div class="info info__another">Gift card</div>
+            <div class="info info__another">PayPal</div>
           </div>
-          <div class="info info__another">Gift card</div>
-          <div class="info info__another">PayPal</div>
-        </div>
-
-        <div class="term term-indent">
-          <div class="term__text">
-            <input type="checkbox" name="terms" class="term__checkbox" />I
-            accept the
-            <span class="term__text_highlighted">Terms and Conditions</span>
+  
+          <div class="term term-indent">
+            <div class="term__text">
+              <input type="checkbox" name="terms" class="term__checkbox" required />I
+              accept the
+              <span class="term__text_highlighted">Terms and Conditions</span>
+            </div>
           </div>
-        </div>
-
-        <div class="order">
-          <form action="#">
-            <button class="order__button">Place order ( $624.99 )</button>
-          </form>
-        </div>
+  
+          <div class="order">
+              <input type="submit" value="Place order ( $624.99 )" class="order__button">       
+          </div>
+        </form>
       </div>
     </div>
 

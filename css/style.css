@@ -75,7 +75,11 @@ body {
   margin-bottom: 15px;
 }
 .payment__method {
-  padding: 10px 70px;
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #4f6ee1;
   background-color: #ffffff;
   border: 2px solid #d0d9e1;
@@ -207,6 +211,7 @@ body {
   border-bottom: 1px dotted;
   cursor: pointer;
 }
+
 .order__button {
   width: 100%;
   color: #ffffff;
